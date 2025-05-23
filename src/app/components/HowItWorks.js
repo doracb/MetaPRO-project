@@ -32,18 +32,23 @@ export default function HowItWorks() {
       }}
     >
       <Typography
-        variant="h6"
-        sx={{ color: "#4a4a4a", letterSpacing: 2, mb: 1 }}
+        variant="h4"
+        sx={{
+          color: "black",
+          fontWeight: 700,
+          letterSpacing: 2,
+          mb: 5,
+          fontFamily: "var(--font-playfair)",
+        }}
       >
-        CUM FUNCȚIONEAZĂ?
+        Cum funcționează?
       </Typography>
-      <Typography
+      {/*<Typography
         variant="h4"
         sx={{ fontWeight: 700, mb: 5, color: "#7c469f" }}
       >
         Începe în doar trei pași!
-      </Typography>
-
+      </Typography>*/}
       <Grid container spacing={3} justifyContent="center">
         {steps.map((step, idx) => (
           <Grid item xs={6} sm={3} md={4} key={idx}>
