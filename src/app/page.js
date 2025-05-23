@@ -7,6 +7,28 @@ export default function HomePage() {
       <div style={{ marginBottom: "20px" }}>
         <AppBarHeader />
       </div>
+      <h1
+        style={{
+          fontSize: 40,
+          marginBottom: 32,
+          marginTop: 32,
+          textAlign: "center",
+          fontFamily: "var(--font-playfair)",
+          color: "#000000",
+        }}
+      >
+        ━━━━━━━━ Planifică evenimentul perfect cu Zeventa ━━━━━━━━
+      </h1>
+      {/* Hero image section */}
+      <div
+        style={{
+          backgroundImage: "url('/images/flowers.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "550px",
+          width: "100%",
+        }}
+      />
       <main
         style={{
           padding: 5,
@@ -15,22 +37,10 @@ export default function HomePage() {
           margin: "0 auto",
         }}
       >
-        <h1
-          style={{
-            fontSize: 38,
-            marginBottom: 16,
-            marginTop: 32,
-            textAlign: "center",
-            fontFamily: "var(--font-playfair)",
-            color: "#000000",
-          }}
-        >
-          Planifică evenimentul perfect{" "}
-        </h1>
-
         <p
           style={{
             fontSize: 20,
+            marginTop: 32,
             marginBottom: 32,
             lineHeight: "1.6",
             color: "#000000",
