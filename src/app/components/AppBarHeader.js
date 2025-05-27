@@ -1,4 +1,5 @@
 import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
+import Link from "next/link";
 
 export default function AppBarHeader() {
   return (
@@ -16,7 +17,9 @@ export default function AppBarHeader() {
           <Button style={{ color: "black" }}>Acasă</Button>
           <Button style={{ color: "black" }}>Cum funcționează?</Button>
           <Button style={{ color: "black" }}>Ce îți oferim?</Button>
-          <Button style={{ color: "black" }}>Login</Button>
+          <Link href="/login" passHref>
+            <Button style={{ color: "black" }}>Login</Button>
+          </Link>
         </Box>
       </Toolbar>
     </AppBar>
