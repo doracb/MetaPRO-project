@@ -13,21 +13,22 @@ export default function LoginPage() {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#d5cce4",
+        padding: "1rem",
       }}
     >
       <div
         style={{
           background: "white",
-          padding: "2rem",
+          padding: "2.5rem",
           borderRadius: "12px",
-          boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+          boxShadow: "0 6px 18px rgba(0, 0, 0, 0.1)",
           width: "100%",
-          maxWidth: "400px",
+          maxWidth: "420px",
           textAlign: "center",
         }}
       >
         <h1
-          style={{ marginBottom: "1.5rem", fontSize: "2rem", color: "#6a1b9a" }}
+          style={{ marginBottom: "1.5rem", color: "#7c469f", fontSize: "2rem" }}
         >
           Autentificare
         </h1>
@@ -37,13 +38,12 @@ export default function LoginPage() {
             value={role}
             onChange={(e) => setRole(e.target.value)}
             style={{
-              display: "block",
               width: "100%",
               padding: "0.75rem",
-              fontSize: "1rem",
               marginBottom: "1rem",
-              borderRadius: "6px",
+              borderRadius: "8px",
               border: "1px solid #ccc",
+              fontSize: "1rem",
             }}
           >
             <option value="client">Client</option>
@@ -53,43 +53,43 @@ export default function LoginPage() {
           <input
             type="email"
             placeholder="Email"
+            required
             style={{
-              display: "block",
               width: "100%",
               padding: "0.75rem",
-              fontSize: "1rem",
               marginBottom: "1rem",
-              borderRadius: "6px",
+              borderRadius: "8px",
               border: "1px solid #ccc",
+              fontSize: "1rem",
             }}
           />
 
           <input
             type="password"
             placeholder="Parolă"
+            required
             style={{
-              display: "block",
               width: "100%",
               padding: "0.75rem",
-              fontSize: "1rem",
               marginBottom: "1rem",
-              borderRadius: "6px",
+              borderRadius: "8px",
               border: "1px solid #ccc",
+              fontSize: "1rem",
             }}
           />
 
           <button
             type="submit"
             style={{
-              padding: "0.75rem 1.5rem",
-              fontSize: "1rem",
+              width: "100%",
+              padding: "0.75rem",
               backgroundColor: "#7c469f",
               color: "white",
+              fontSize: "1rem",
               border: "none",
-              borderRadius: "6px",
+              borderRadius: "8px",
               cursor: "pointer",
-              width: "100%",
-              marginTop: "0.5rem",
+              transition: "background 0.3s",
             }}
           >
             Autentifică-te
@@ -99,13 +99,17 @@ export default function LoginPage() {
             style={{
               marginTop: "1.5rem",
               fontSize: "0.95rem",
-              color: "#6a1b9a",
+              color: "#7c469f",
             }}
           >
             Nu ai cont?{" "}
             <a
               href="/register"
-              style={{ color: "#6a1b9a", textDecoration: "underline" }}
+              style={{
+                color: "#7c469f",
+                textDecoration: "underline",
+                fontWeight: "bold",
+              }}
             >
               Creează unul
             </a>

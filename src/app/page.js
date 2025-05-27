@@ -8,6 +8,7 @@ export default function HomePage() {
         <AppBarHeader />
       </div>
       <h1
+        id="home"
         style={{
           fontSize: 40,
           marginBottom: 32,

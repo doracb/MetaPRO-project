@@ -14,8 +14,12 @@ export default function AppBarHeader() {
         </a>
         <Typography sx={{ flexGrow: 1 }}></Typography>
         <Box>
-          <Button style={{ color: "black" }}>Acasă</Button>
-          <Button style={{ color: "black" }}>Cum funcționează?</Button>
+          <Link href="/#home" passHref>
+            <Button style={{ color: "black" }}>Acasă</Button>
+          </Link>
+          <Link href="/#cum-functioneaza" passHref>
+            <Button style={{ color: "black" }}>Cum funcționează?</Button>
+          </Link>
           <Button style={{ color: "black" }}>Ce îți oferim?</Button>
           <Link href="/login" passHref>
             <Button style={{ color: "black" }}>Login</Button>
