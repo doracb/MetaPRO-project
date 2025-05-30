@@ -26,7 +26,6 @@ export default function HowItWorks() {
 
   return (
     <Box
-      id="cum-functioneaza"
       sx={{
         padding: "4rem 2rem",
         textAlign: "center",

@@ -3,7 +3,14 @@ import Link from "next/link";
 
 export default function AppBarHeader() {
   return (
-    <AppBar position="static" color="#CBC3E3">
+    <AppBar
+      position="fixed"
+      sx={{
+        backgroundColor: "#f9f7fb",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+        zIndex: 1100,
+      }}
+    >
       <Toolbar>
         <a>
           <img
@@ -20,7 +27,9 @@ export default function AppBarHeader() {
           <Link href="/#cum-functioneaza" passHref>
             <Button style={{ color: "black" }}>Cum funcționează?</Button>
           </Link>
-          <Button style={{ color: "black" }}>Ce îți oferim?</Button>
+          <Link href="/#ce-oferim" passHref>
+            <Button style={{ color: "black" }}>Ce îți oferim?</Button>
+          </Link>
           <Link href="/login" passHref>
             <Button style={{ color: "black" }}>Login</Button>
           </Link>
